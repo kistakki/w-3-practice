@@ -1,15 +1,15 @@
-function stringSplosion(str){
+let obj = {
+name: "Márta Richard",
+age: 28,
+favoriteDrink: "Beer"
 
-let result = ""
-
-  for( let i= 0; i < str.length; i++) {
-    for(let j = 0; j <= i; j++) {
-    result += str[j]
-    }
-  }
-
-return result
 }
 
+let objKeys = Object.keys(obj)
 
-console.log(stringSplosion("Codecool"))
+for( const key of objKeys) {
+console.log(key)
+console.log(obj[key])
+
+}
+
